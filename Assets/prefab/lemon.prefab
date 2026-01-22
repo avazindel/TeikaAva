@@ -12,6 +12,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 3946690252706702459, guid: 8965f466276a74e2ea058e89ee74c526, type: 3}
+    - target: {fileID: 258182583532746807, guid: 6ddbd2091723744648a4d4dd72f4c2fc, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6737718
+      objectReference: {fileID: 0}
+    - target: {fileID: 258182583532746807, guid: 6ddbd2091723744648a4d4dd72f4c2fc, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 258182583532746807, guid: 6ddbd2091723744648a4d4dd72f4c2fc, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9716981
+      objectReference: {fileID: 0}
     - target: {fileID: 3252427845014770326, guid: 6ddbd2091723744648a4d4dd72f4c2fc, type: 3}
       propertyPath: m_Name
       value: lemon
