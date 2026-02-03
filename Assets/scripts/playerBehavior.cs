@@ -1,12 +1,20 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
+//transformation order:  cherry, strawberry, grape, lemon, orange, apple, pear, banana, pineapple, watermelon
+
+
+
 public class playerBehavior : MonoBehaviour
 {
 
     public float speed;
-    public GameObject fruit;
     private GameObject currentFruit;
+    public GameObject[] fruits;
+    //[] for an array of multiple
+
+    //public int[] numbers;
 
     public float offY = -0.8f;
 
@@ -14,7 +22,10 @@ public class playerBehavior : MonoBehaviour
     void Start()
     {
 
-
+     //   for (int i = 0; i < numbers.Length; i++)
+     //   {
+     //       print(numbers[i]);
+     //   }  refernce
 
 
     }
@@ -22,6 +33,13 @@ public class playerBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+       // int choice = Random.Range(1, 100);
+        // print(choice);
+
+
+       
+
 
         if (currentFruit != null)
         {
@@ -31,7 +49,8 @@ public class playerBehavior : MonoBehaviour
         }
         else
         {
-            currentFruit = Instantiate(fruit, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
+            int choice = Random.Range(0, fruits.Length);
+            currentFruit = Instantiate(fruits[choice], new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
         }
 
 
@@ -65,8 +84,8 @@ public class playerBehavior : MonoBehaviour
         }
 
 
-
-
+        //interaction with the 2D collider = currentFruit... if (collider w sameCurrentFruit- return GetComponent<nextFruit>
+        //make a list? retrieve list
 
     }
 
