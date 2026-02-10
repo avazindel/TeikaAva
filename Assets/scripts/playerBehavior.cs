@@ -17,15 +17,18 @@ public class playerBehavior : MonoBehaviour
     //public int[] numbers;
 
     public float offY = -0.8f;
+    public int move;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
-     //   for (int i = 0; i < numbers.Length; i++)
-     //   {
-     //       print(numbers[i]);
-     //   }  refernce
+        //   for (int i = 0; i < numbers.Length; i++)
+        //   {
+        //       print(numbers[i]);
+        //   }  refernce
+
+        move = 0; //you can move both ways
 
 
     }
@@ -34,11 +37,11 @@ public class playerBehavior : MonoBehaviour
     void Update()
     {
 
-       // int choice = Random.Range(1, 100);
+        // int choice = Random.Range(1, 100);
         // print(choice);
 
 
-       
+
 
 
         if (currentFruit != null)
@@ -69,6 +72,12 @@ public class playerBehavior : MonoBehaviour
 
 
 
+        //bool left = (Keyboard.current.leftArrowKey.isPressed || Keyboard.current.aKey.isPressed) && move
+
+
+
+
+
         if (Keyboard.current.leftArrowKey.isPressed)
         {
             Vector3 newPos = transform.position;
@@ -88,5 +97,22 @@ public class playerBehavior : MonoBehaviour
         //make a list? retrieve list
 
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("LB"))
+        {
+            move = 1; //cannot move left
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("LB"))
+        {
+            move = 0; //CAN move left
+        }
+    }
+
 
 }
