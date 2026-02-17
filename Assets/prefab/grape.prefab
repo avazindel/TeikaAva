@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7942289680997222590, guid: 6ddbd2091723744648a4d4dd72f4c2fc, type: 3}
+      propertyPath: fruitType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8127988140243495052, guid: 6ddbd2091723744648a4d4dd72f4c2fc, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.2199999

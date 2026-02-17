@@ -575,7 +575,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15.003998}
+  m_AnchoredPosition: {x: 0, y: -15.003967}
   m_SizeDelta: {x: -1560.71, y: -819.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &578690535
@@ -933,7 +933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e79f9753fb344af0ab8985c66596225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BorderBehavior
-  timeout: 2
+  timeout: 1
   gameOver: {fileID: 578690533}
 --- !u!1 &791097478
 GameObject:
@@ -1623,6 +1623,9 @@ MonoBehaviour:
   - {fileID: 2773982722126292406, guid: 1bd28b928f6094779820bd75b35567bf, type: 3}
   - {fileID: 5640810928228848805, guid: dc61f3f2e79c34fd6a9d70988df5bc03, type: 3}
   - {fileID: 7356641624272880085, guid: ff31bfc5b07744493983f6770632ed37, type: 3}
+  - {fileID: 649635075698484831, guid: 28c38962ebf36456a9591a5d32bee4e0, type: 3}
+  - {fileID: 158059957229760899, guid: 72fb678e98e064454ab32f91490e39a2, type: 3}
+  - {fileID: 6657107521538130204, guid: 27ef4a5c2883e41029c2a8dca96f5c8e, type: 3}
   offY: -0.8
   move: 0
 --- !u!212 &1330363359
@@ -1693,7 +1696,7 @@ Transform:
   m_GameObject: {fileID: 1330363357}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.77, z: 0}
+  m_LocalPosition: {x: 0, y: 5.26, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
