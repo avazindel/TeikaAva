@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 
 //transformation order:  cherry, strawberry, grape, lemon, orange, apple, pear, banana, pineapple, watermelon
@@ -18,6 +19,11 @@ public class playerBehavior : MonoBehaviour
 
     public float offY = -0.8f;
     public int move;
+
+
+    public int[] points;
+    public int total;
+    public TMP_Text textField;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -113,6 +119,15 @@ public class playerBehavior : MonoBehaviour
             move = 0; //CAN move left
         }
     }
+
+
+    public void updateScore(int index) {
+
+        total = total + points[index];
+        textField.SetText("Score:" + total);
+
+    }
+
 
 
 }
