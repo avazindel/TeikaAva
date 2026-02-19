@@ -47,7 +47,12 @@ public class FruitBehaviort : MonoBehaviour
                     currentFruit.GetComponent<Collider2D>().enabled = true;
                     currentFruit.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
 
+                    GetComponent<AudioSource>().Play();
+
+
                     GameObject.FindGameObjectWithTag("Player").GetComponent<playerBehavior>().updateScore(fruitType);
+
+
 
                     //destroy both fruits
                     Destroy(other.gameObject);
