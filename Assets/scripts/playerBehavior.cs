@@ -25,9 +25,14 @@ public class playerBehavior : MonoBehaviour
     public int total;
     public TMP_Text textField;
 
+
+    private AudioSource dropSource;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
+        dropSource = GetComponents<AudioSource>()[1];
 
         //   for (int i = 0; i < numbers.Length; i++)
         //   {
@@ -58,12 +63,15 @@ public class playerBehavior : MonoBehaviour
         }
         else
         {
-            int choice = Random.Range(0, fruits.Length);
+            print(GameObject.FindGameObjectWithTag("Queue"));
+            int choice = GameObject.FindGameObjectWithTag("Queue").GetComponent<QueueManager>().updateQueue();
+
+            //int choice = Random.Range(0, fruits.Length);
             currentFruit = Instantiate(fruits[choice], new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
         }
 
 
-
+        //drop fruit here
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             Rigidbody2D body = currentFruit.GetComponent<Rigidbody2D>();
@@ -71,6 +79,8 @@ public class playerBehavior : MonoBehaviour
 
             Collider2D collider = currentFruit.GetComponent<Collider2D>();
             collider.enabled = true;
+
+            dropSource.Play();
 
             currentFruit = null;
 

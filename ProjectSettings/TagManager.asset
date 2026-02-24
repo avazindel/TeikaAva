@@ -8,6 +8,7 @@ TagManager:
   - RB
   - Top
   - Fruit
+  - Queue
   layers:
   - Default
   - TransparentFX

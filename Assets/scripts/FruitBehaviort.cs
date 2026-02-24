@@ -8,12 +8,17 @@ public class FruitBehaviort : MonoBehaviour
 
     public GameObject[] fruits;
     public int fruitType;
+    private AudioSource mergeSource;
+    private AudioSource dropSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
         fruits = GameObject.FindGameObjectWithTag("Player").GetComponent<playerBehavior>().fruits;
+
+        mergeSource = GameObject.FindGameObjectWithTag("Player").GetComponents<AudioSource>()[0];
+
         //transformation order:  cherry, strawberry, grape, lemon, orange, apple, pear, banana, pineapple, watermelon
 
       //  total = 0;
@@ -47,8 +52,8 @@ public class FruitBehaviort : MonoBehaviour
                     currentFruit.GetComponent<Collider2D>().enabled = true;
                     currentFruit.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
 
-                    GetComponent<AudioSource>().Play();
-
+                    //GetComponent<AudioSource>().Play();
+                    mergeSource.Play();
 
                     GameObject.FindGameObjectWithTag("Player").GetComponent<playerBehavior>().updateScore(fruitType);
 
