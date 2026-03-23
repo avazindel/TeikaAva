@@ -1525,7 +1525,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 628, y: 271.68}
+  m_AnchoredPosition: {x: 737, y: 317.58}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1264310378
@@ -1614,7 +1614,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -3.6313381, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1843,7 +1843,7 @@ MonoBehaviour:
   offY: -0.8
   move: 0
   points: 140000001e00000028000000320000003c000000460000005a00000078000000aa000000fa000000
-  total: -226
+  total: 0
   textField: {fileID: 1664408589}
 --- !u!212 &1330363359
 SpriteRenderer:
@@ -2266,8 +2266,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.3227292, y: 0.7298983}
-  m_AnchoredPosition: {x: 0, y: 326.9}
-  m_SizeDelta: {x: -238.99, y: -657.18}
+  m_AnchoredPosition: {x: 0, y: 394.08002}
+  m_SizeDelta: {x: -238.99, y: -791.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1337986089
 MonoBehaviour:
@@ -2946,12 +2946,24 @@ PrefabInstance:
       value: Background_0
       objectReference: {fileID: 0}
     - target: {fileID: 8463296706146766733, guid: 6137c1b677d244734877771147639988, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.117049
+      objectReference: {fileID: 0}
+    - target: {fileID: 8463296706146766733, guid: 6137c1b677d244734877771147639988, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.117049
+      objectReference: {fileID: 0}
+    - target: {fileID: 8463296706146766733, guid: 6137c1b677d244734877771147639988, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.82340986
+      objectReference: {fileID: 0}
+    - target: {fileID: 8463296706146766733, guid: 6137c1b677d244734877771147639988, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.0239496
+      value: -2.2254
       objectReference: {fileID: 0}
     - target: {fileID: 8463296706146766733, guid: 6137c1b677d244734877771147639988, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.2441397
+      value: -6.0427
       objectReference: {fileID: 0}
     - target: {fileID: 8463296706146766733, guid: 6137c1b677d244734877771147639988, type: 3}
       propertyPath: m_LocalPosition.z
